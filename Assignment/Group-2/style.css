@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.carousel-inner{
+    height: 80vh;
+
+}
+.carousel-item > img {
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
+}
+
+.main {
+    position: relative;
+    left: 80px;
+    top: 50px;
+}
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    border-radius: 50%;
+}
+.navbar{
+    background-color: green;
+    
+}
+.nav{
+    position: relative;
+    left: 60px;
+}
+.name{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 15px;
+}
+.client-1{
+    display: flex;
+}
+.client-1 img{
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.aside{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding:20px;
+}
+.upper{
+    margin-bottom: 30px;
+}
+.header{
+    text-align:left;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+/* On small screens, disappear aside and slide bar and reposition name*/
+@media screen and (max-width: 767px) {
+	.aside, .carousel {
+		display: none;
+	}
+	.name {
+		position: absolute;
+    top: 40px;
+    left: 70px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
